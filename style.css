@@ -1,20 +1,49 @@
+* {
+    font-family: 'Cabin', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+
+
+body {
+    background-color: #ffffaa;
+}
+
+.jumbotron {
+    background-color: #000040;
+    padding-bottom: 75px;
+}
+
+
 h1 {
     font-size: 60px;
-    color: rgb(75, 17, 75);
+    color:#ffffaa;
 }
 
 h2 {
     font-size: 32px;
-    color: rgb(16, 16, 114);
+    color: #ffaaff;
+}
+
+.projects h2 {
+    width: 100%;
+    text-align: center;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #999;
+    color: black;
 }
 
 .portfolio-header {
     position: relative;
     width: 70%;
     margin: 0 auto;
-    border-bottom: 1px solid #333;
-    border-left: 1px solid #333;
-    border-right: 1px solid #333;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
     padding: 10px;
 }
 
@@ -29,31 +58,40 @@ h2 {
 }
 
 .current-photo img {
-    border: 2px solid #333;
+    border: 2px solid white;
     border-radius: 75px;
 }
 
 .header-navigation {
     width: 400px;
-    border: 2px solid #333;
+    border: 2px solid #3344ee;
     padding: 5px;
-    padding-left: 30px;
+    margin: 0 auto;
+    text-align: center;
     border-radius: 50px;
     background-color: white;
     position: absolute;
-    bottom: -50px;
+    bottom: -57px;
     left: -100px;
 }
 
 @media screen and (max-width: 992px) {
+    .portfolio-header {
+        padding: 15px;
+    }
+    
     .name-and-title {
         text-align: left;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-bottom: 15px;
+    }
+
     .portfolio-header {
-        width: 90%;
+        width: 100%;
     }
 
     .current-photo, .current-photo img {
@@ -67,7 +105,7 @@ h2 {
         position: static;
         display: block;
         margin: 0 auto;
-        width: 70%;
+        width: 90%;
         border: 2px solid #999;
         border-radius: 0;
         padding-left: 0;
