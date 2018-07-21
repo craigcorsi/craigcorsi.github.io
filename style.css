@@ -1,9 +1,81 @@
 h1 {
     font-size: 60px;
-    color: plum;
+    color: rgb(75, 17, 75);
 }
 
 h2 {
     font-size: 32px;
-    color: blue;
+    color: rgb(16, 16, 114);
+}
+
+.portfolio-header {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 10px;
+}
+
+.name-and-title {
+    text-align: center;
+}
+
+.current-photo {
+    position: absolute;
+    bottom: -70px;
+    right: -100px;
+}
+
+.current-photo img {
+    border: 2px solid #333;
+    border-radius: 75px;
+}
+
+.header-navigation {
+    width: 400px;
+    border: 2px solid #333;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: -50px;
+    left: -100px;
+}
+
+@media screen and (max-width: 992px) {
+    .name-and-title {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-header {
+        width: 90%;
+    }
+
+    .current-photo, .current-photo img {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .header-navigation {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        border: 2px solid #999;
+        border-radius: 0;
+        padding-left: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .name-and-title {
+        text-align: center;
+    }
 }
