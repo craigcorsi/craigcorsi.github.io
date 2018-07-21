@@ -6,8 +6,7 @@
 	<meta charset="utf-8">
 
 	<title>Craig Corsi</title>
-	<meta name="description" content="The HTML5 Herald">
-	<meta name="author" content="SitePoint">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +15,7 @@
 		<h1>Craig Corsi</h1>
 		<h2>full stack web developer</h2>
 		<h2>Ph.D. candidate in mathematics</h2>
-		<a href="math.html">Click here for information about research and teaching</a>
+		<a href="http://www-users.math.umn.edu/~corsi007/">Click here for information about research and teaching</a>
 	</header>
 
 	<div class="introduction">
@@ -40,14 +39,114 @@
 
 	<div class="projects">
 		<h2>Recent projects</h2>
-		<!-- dynamically populated with new coding projects, stating the purpose
-		as well as what I used. -->
-		<div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://mysterious-sands-71955.herokuapp.com/">
+					<img src="assets/imgs/notebook.jpg" alt="Online Writing Journal" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-sm-8">
+				<h2>Online Writing Journal</h2>
+				<p>This full stack web application allows users to write and update drafts of their up-and-coming creative works, chapter
+					by chapter. User authentication keeps user drafts private, while a simple interface reduces clutter. </p>
+				<p>This is a collaboration with two other developers at the University of Minnesota Coding Boot Camp. The Github page is
+					<a href="https://github.com/craigcorsi/Online-Writing-Journal">here.</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://craigcorsi.github.io/Joke-Generator-Extraordinaire/">
+					<img src="assets/imgs/pJoke.jpg" alt="Predictive Joke Generator" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-sm-8">
+				<h2>Joke Generator Extraordinaire</h2>
+				<p>Working on a new joke? It can be difficult to sift through the English lexicon to find the right word associations. This
+					app assists with the brainstorming process by collecting a topic phrase, searching for related terms, and spitting back
+					new and interesting phrases along with funny images.</p>
+				<p>This is a collaboration with two other developers at the University of Minnesota Coding Boot Camp. The Github page is
+					<a href="https://github.com/craigcorsi/Comedy-Ideas-Bot">here.</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="assets/imgs/liri.jpg" alt="GIPHY Super Science Display" class="img-fluid">
+			</div>
+			<div class="col-sm-8">
+				<h2>LIRI: Language Interpretation and Recognition Interface (Node App)</h2>
+				<p> Search Spotify and The Open Movie Database, or fetch your most recent tweets, all from the command line! The Github page
+					is
+					<a href="https://github.com/craigcorsi/liri-node-app">here</a>, where you can download the app to try yourself!
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://craigcorsi.github.io/week-4-game/">
+					<img src="assets/imgs/steven.jpg" alt="Steven Universe Spar RPG" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-sm-8">
+				<h2>Steven Universe Spar RPG</h2>
+				<p>Choose one of four characters from the Steven Universe series (Steven, Pearl, Garnet, and Amethyst) and face off against
+					the others! The Github page is
+					<a href="https://github.com/craigcorsi/week-4-game">here.</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://craigcorsi.github.io/Hangman-Game/">
+					<img src="assets/imgs/oracle.jpg" alt="Oracle Request Line" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-sm-8">
+				<h2>Oracle Request Line (hangman)</h2>
+				<p>This is a Hangman game with the theme of visiting an oracle to request advice. The Github page is
+					<a href="https://github.com/craigcorsi/Hangman-Game">here.</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<a href="https://craigcorsi.github.io/GIPHY-Display/">
+					<img src="assets/imgs/science.jpg" alt="GIPHY Super Science Display" class="img-fluid">
+				</a>
+			</div>
+			<div class="col-sm-8">
+				<h2>GIPHY Super Science Display</h2>
+				<p>Search GIPHY for science-themed topics, and add your own searches as well! The Github page is
+					<a href="https://github.com/craigcorsi/GIPHY-Display">here.</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="assets/imgs/scrabble.jpg" alt="Oracle Request Line" class="img-fluid">
+			</div>
+			<div class="col-sm-8">
+				<h2>Word Guess (Node App)</h2>
+				<p>This variation of the hangman game uses the longest words from the SCRABBLE dictionary and is operated entirely from
+					the command line! The Github page is
+					<a href="https://github.com/craigcorsi/node-word-guess">here.</a>
+				</p>
+			</div>
+		</div>
 	</div>
-		
+
 	<div class="contact">
 		<a href="https://github.com/craigcorsi">Github</a>
 		<a href="https://www.linkedin.com/in/craig-corsi-5452b0154/">LinkedIn</a>
+		email: corsi007 at umn dot edu
 	</div>
 
 	<footer>
@@ -70,8 +169,9 @@
 
 
 
-
-
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.bundle.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 
