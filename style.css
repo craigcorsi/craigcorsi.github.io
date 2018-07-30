@@ -75,6 +75,19 @@ h2 {
     left: -100px;
 }
 
+.row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+img {
+    border: 1px solid black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 992px) {
     .portfolio-header {
         padding: 15px;
