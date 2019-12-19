@@ -51,8 +51,8 @@ a:hover {
   position: relative;
   width: 70%;
   margin: 0 auto;
-  border-bottom: 1px solid white;
   border-left: 1px solid white;
+  border-bottom: 1px solid white;
   border-right: 1px solid white;
   padding: 10px;
 }
@@ -94,6 +94,12 @@ a:hover {
   }
 }
 @media screen and (max-width: 768px) {
+  .header-navigation, .current-photo img, .current-photo {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
+
   .jumbotron {
     padding-bottom: 15px;
   }
@@ -103,22 +109,13 @@ a:hover {
   }
 
   .current-photo {
-    position: static;
-    display: block;
-    margin: 0 auto;
     margin-bottom: 15px;
   }
   .current-photo img {
-    position: static;
-    display: block;
-    margin: 0 auto;
     margin-bottom: 15px;
   }
 
   .header-navigation {
-    position: static;
-    display: block;
-    margin: 0 auto;
     width: 90%;
     border: 2px solid #aaa;
     border-radius: 0;
@@ -132,4 +129,4 @@ a:hover {
   }
 }
 
-/*# sourceMappingURL=style2.css.map */
+/*# sourceMappingURL=style.css.map */

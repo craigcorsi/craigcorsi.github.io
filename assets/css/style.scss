@@ -1,59 +1,10 @@
-$font-main: 'Cabin', sans-serif;
-$font-heading: 'Fira Sans', sans-serif;
+@use "base" as *;
 
-$color-bg: #ffffaa;
-$color-heading: #000040;
-$color-accent: #ffaaff;
-
-$border-darker: black;
-$border-dark: #555;
-$border-light: #aaa;
-$border-lighter: white;
-
-
-* {
-    font-family: $font-main;
+@mixin border-lbr($color) {
+    border-left: $color;
+    border-bottom: $color;
+    border-right: $color;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: $font-heading;
-}
-
-body {
-    background-color: $color-bg;
-}
-
-h1 {
-    font-size: 60px;
-    color: $color-bg;
-}
-
-h2 {
-    font-size: 32px;
-    color: $color-accent;
-}
-
-img {
-    border: 1px solid $border-darker;
-}
-
-a:hover {
-    cursor: pointer;
-}
-
-
-
-.jumbotron {
-    background-color: $color-heading;
-    padding-bottom: 75px;
-}
-
-.row {
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-
 
 .projects {
     h2 {
@@ -70,12 +21,9 @@ a:hover {
     position: relative;
     width: 70%;
     margin: 0 auto;
-    border-bottom: 1px solid $border-lighter;
-    border-left: 1px solid $border-lighter;
-    border-right: 1px solid $border-lighter;
+    @include border-lbr(1px solid white);
     padding: 10px;
 }
-
 
 .name-and-title {
     text-align: center;
@@ -120,6 +68,12 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    %container-static {
+        position: static;
+        display: block;
+        margin: 0 auto;
+    }
+
     .jumbotron {
         padding-bottom: 15px;
     }
@@ -129,23 +83,17 @@ a:hover {
     }
 
     .current-photo {
-        position: static;
-        display: block;
-        margin: 0 auto;
+        @extend %container-static;
         margin-bottom: 15px;
 
         img {
-            position: static;
-            display: block;
-            margin: 0 auto;
-            margin-bottom: 15px; 
+            @extend %container-static;
+            margin-bottom: 15px;
         }
     }
 
     .header-navigation {
-        position: static;
-        display: block;
-        margin: 0 auto;
+        @extend %container-static;
         width: 90%;
         border: 2px solid $border-light;
         border-radius: 0;
