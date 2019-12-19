@@ -1,0 +1,160 @@
+$font-main: 'Cabin', sans-serif;
+$font-heading: 'Fira Sans', sans-serif;
+
+$color-bg: #ffffaa;
+$color-heading: #000040;
+$color-accent: #ffaaff;
+
+$border-darker: black;
+$border-dark: #555;
+$border-light: #aaa;
+$border-lighter: white;
+
+
+* {
+    font-family: $font-main;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+}
+
+body {
+    background-color: $color-bg;
+}
+
+h1 {
+    font-size: 60px;
+    color: $color-bg;
+}
+
+h2 {
+    font-size: 32px;
+    color: $color-accent;
+}
+
+img {
+    border: 1px solid $border-darker;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+
+.jumbotron {
+    background-color: $color-heading;
+    padding-bottom: 75px;
+}
+
+.row {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+
+.projects {
+    h2 {
+        width: 100%;
+        text-align: center;
+        margin: 10px auto;
+        padding-bottom: 5px;
+        border-bottom: 1px solid $border-light;
+        color: black;
+    }
+}
+
+.portfolio-header {
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid $border-lighter;
+    border-left: 1px solid $border-lighter;
+    border-right: 1px solid $border-lighter;
+    padding: 10px;
+}
+
+
+.name-and-title {
+    text-align: center;
+}
+
+.current-photo {
+    position: absolute;
+    bottom: -70px;
+    right: -100px;
+
+    img {
+        border: 2px solid $border-lighter;
+        border-radius: 75px;
+    }
+}
+
+.header-navigation {
+    width: 400px;
+    border: 2px solid $border-light;
+    padding: 5px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: -57px;
+    left: -100px;
+}
+
+
+
+
+
+@media screen and (max-width: 992px) {
+    .portfolio-header {
+        padding: 15px;
+    }
+    
+    .name-and-title {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jumbotron {
+        padding-bottom: 15px;
+    }
+
+    .portfolio-header {
+        width: 100%;
+    }
+
+    .current-photo {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+
+        img {
+            position: static;
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 15px; 
+        }
+    }
+
+    .header-navigation {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border: 2px solid $border-light;
+        border-radius: 0;
+        padding-left: 0;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .name-and-title {
+        text-align: center;
+    }
+}

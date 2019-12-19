@@ -1,0 +1,135 @@
+* {
+  font-family: "Cabin", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+body {
+  background-color: #ffffaa;
+}
+
+h1 {
+  font-size: 60px;
+  color: #ffffaa;
+}
+
+h2 {
+  font-size: 32px;
+  color: #ffaaff;
+}
+
+img {
+  border: 1px solid black;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.jumbotron {
+  background-color: #000040;
+  padding-bottom: 75px;
+}
+
+.row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.projects h2 {
+  width: 100%;
+  text-align: center;
+  margin: 10px auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #aaa;
+  color: black;
+}
+
+.portfolio-header {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  padding: 10px;
+}
+
+.name-and-title {
+  text-align: center;
+}
+
+.current-photo {
+  position: absolute;
+  bottom: -70px;
+  right: -100px;
+}
+.current-photo img {
+  border: 2px solid white;
+  border-radius: 75px;
+}
+
+.header-navigation {
+  width: 400px;
+  border: 2px solid #aaa;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 50px;
+  background-color: white;
+  position: absolute;
+  bottom: -57px;
+  left: -100px;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio-header {
+    padding: 15px;
+  }
+
+  .name-and-title {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .jumbotron {
+    padding-bottom: 15px;
+  }
+
+  .portfolio-header {
+    width: 100%;
+  }
+
+  .current-photo {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .current-photo img {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .header-navigation {
+    position: static;
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    border: 2px solid #aaa;
+    border-radius: 0;
+    padding-left: 0;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .name-and-title {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
